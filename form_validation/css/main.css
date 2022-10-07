@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#060102;
+    --secondary:rgb(255, 255, 255);
+}
+body{
+    background-image:linear-gradient(rgb(216, 216, 217) ,rgb(253, 253, 253),rgb(196, 196, 196) )
+}
+/* js css */
+.error_input{
+    border: 1px solid red;
+}
+#error_user,#error_email,#error_pass{
+    color: red;
+}
+.cover{
+   height: 100vh;
+   width: 100%;
+   display: grid;
+   grid-template-columns:repeat(1,1fr);
+   grid-auto-rows: minmax(200px auto);
+}
+.header,.footer{
+    background-color:var(--primary);
+    color: var(--secondary);
+    text-align: center;
+}
+.header > h3,.footer > p{
+    margin-top: 20px;
+}
+.form{
+    height:80vh
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+form{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px silver;
+    padding:1em;
+    border: 1px solid darkgrey;
+}
+label{
+    margin:5px 0px;
+    color: #333;
+    text-transform: capitalize;
+}
+input{
+    outline-color: #006600;
+    padding:1em;
+    font-size: 0.9rem;
+    border: none;
+    border-bottom: 1px solid silver;
+    /* box-shadow: 0px 0px 5px silver; */
+}
+input[type="submit"]{
+    background-color:var(--primary);
+    color: var(--secondary);
+    /* border-radius: 10px; */
+    margin-top: 10px;
+}
